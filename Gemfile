@@ -27,14 +27,16 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 group :development do
-    gem 'quiet_assets'
-    gem 'meta_request'
-     gem 'binding_of_caller' # Going up the stack  binding.of_caller(2).eval('var = :hello')
+  gem 'quiet_assets'
+  gem 'meta_request'
+  gem 'binding_of_caller' # Going up the stack  binding.of_caller(2).eval('var = :hello')
   gem 'awesome_print' # In the rails console: ap Account.limit(2).all
   gem 'pry-rails' # Uses pry instead of irb for the console
   gem 'pry-byebug'
-end
+  gem 'rspec-rails'
 
+end
+gem 'capybara'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
